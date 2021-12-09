@@ -9,9 +9,13 @@
       <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer ></script> 
    </head>
    <body>
-      <section class="h-full w-full border-box transition-all duration-500 linear bg-white">
+      <section id="body" class="h-full w-full border-box transition-all duration-500 linear bg-white">
          <style>
             @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+            html {
+              scroll-behavior: smooth;
+            }
 
             .header-2-1 .btn-outline {
             border: 1px solid #555b61;
@@ -86,17 +90,17 @@
                         alt="" />
                      </a>
                      <!-- <div class=" lg:hidden"> -->
-                        <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active lg:hidden"
+                     <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active lg:hidden"
                      href="#">Home</a>
-                     <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative lg:hidden" href="#">Promo</a>
+                     <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative lg:hidden" href="#promo_section">Promo</a>
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative lg:hidden" href="#">About Us</a>
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative lg:hidden" href="#">Contact</a>
                      <!-- </div> -->
                   </nav>
                   <div class="hidden lg:inline-flex">
                      <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active"
-                     href="#">Home</a>
-                     <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#">Promo</a>
+                     href="#body">Home</a>
+                     <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#promo_section">Promo</a>
                      <!-- <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#">Pricing</a> -->
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#">About Us</a>
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#">Contact</a>
@@ -127,56 +131,56 @@
                </div>
             </header>
 
-         <!-- Hero -->
-         <div>
-            <div class="mx-auto flex pt-12 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col">
-               <!-- Left Column -->
-               <div
-                  class="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center">
-                  <!-- <p class="small-text mb-8 leading-relaxed font-semibold text-sm">
-                  FREE 30 DAY TRIAL
-                  </p> -->
-                  <!-- <h1 class="title-font sm:text-5xl lg:text-6xl text-4xl mb-8 font-semibold sm:leading-tight">
-                  The best way<br class="lg:block hidden" />
-                  to organize your online learning
-                  </h1> -->
-                  <h1 class="title-font sm:text-5xl lg:text-6xl text-4xl mb-8 font-semibold sm:leading-tight">
-                  PROMO 12.12<br class="lg:block hidden" />
-                  Diskon 12%
-                  </h1>
-                  <!-- <img src="assets/logo_rumah_keju.png" alt="countdown"> -->
-                  <h1 class="uppercase text-7xl">countdown</h1>
-                  <br>
-                  <div class="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">
-                     <button
-                        class="btn-fill inline-flex font-semibold text-white text-base py-4 px-6 rounded-full mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg">
-                        Lihat Penawaran
-                     </button>
-                  <!-- <button class="btn-outline font-normal text-black text-base py-4 px-6 rounded-xl focus:outline-none bg-transparent rounded hover:border-transparent">
-                     <div class="flex items-center">
-                        <svg class="mr-2.5" width="13" height="12" viewBox="0 0 13 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                           d="M10.9293 7.99988L6.66668 5.15788V10.8419L10.9293 7.99988ZM12.9173 8.27722L5.85134 12.9879C5.80115 13.0213 5.74283 13.0404 5.6826 13.0433C5.62238 13.0462 5.5625 13.0327 5.50934 13.0042C5.45619 12.9758 5.41175 12.9334 5.38075 12.8817C5.34976 12.83 5.33337 12.7708 5.33334 12.7105V3.28922C5.33337 3.22892 5.34976 3.16976 5.38075 3.11804C5.41175 3.06633 5.45619 3.02398 5.50934 2.99552C5.5625 2.96706 5.62238 2.95355 5.6826 2.95644C5.74283 2.95932 5.80115 2.97848 5.85134 3.01188L12.9173 7.72255C12.963 7.75299 13.0004 7.79423 13.0263 7.84261C13.0522 7.89099 13.0658 7.94501 13.0658 7.99988C13.0658 8.05475 13.0522 8.10878 13.0263 8.15716C13.0004 8.20553 12.963 8.24678 12.9173 8.27722Z"
-                           fill="#555B61" />
-                        </svg>
-                        Lihat Penawaran
+            <!-- Hero -->
+            <div>
+               <div class="mx-auto flex pt-12 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col">
+                  <!-- Left Column -->
+                  <div
+                     class="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center">
+                     <!-- <p class="small-text mb-8 leading-relaxed font-semibold text-sm">
+                     FREE 30 DAY TRIAL
+                     </p> -->
+                     <!-- <h1 class="title-font sm:text-5xl lg:text-6xl text-4xl mb-8 font-semibold sm:leading-tight">
+                     The best way<br class="lg:block hidden" />
+                     to organize your online learning
+                     </h1> -->
+                     <h1 class="title-font sm:text-5xl lg:text-6xl text-4xl mb-8 font-semibold sm:leading-tight">
+                     PROMO 12.12<br class="lg:block hidden" />
+                     Diskon 12%
+                     </h1>
+                     <!-- <img src="assets/logo_rumah_keju.png" alt="countdown"> -->
+                     <h1 class="uppercase text-7xl">countdown</h1>
+                     <br>
+                     <div class="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">
+                        <button
+                           class="btn-fill inline-flex font-semibold text-white text-base py-4 px-6 rounded-full mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg">
+                           Lihat Penawaran
+                        </button>
+                     <!-- <button class="btn-outline font-normal text-black text-base py-4 px-6 rounded-xl focus:outline-none bg-transparent rounded hover:border-transparent">
+                        <div class="flex items-center">
+                           <svg class="mr-2.5" width="13" height="12" viewBox="0 0 13 13" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M10.9293 7.99988L6.66668 5.15788V10.8419L10.9293 7.99988ZM12.9173 8.27722L5.85134 12.9879C5.80115 13.0213 5.74283 13.0404 5.6826 13.0433C5.62238 13.0462 5.5625 13.0327 5.50934 13.0042C5.45619 12.9758 5.41175 12.9334 5.38075 12.8817C5.34976 12.83 5.33337 12.7708 5.33334 12.7105V3.28922C5.33337 3.22892 5.34976 3.16976 5.38075 3.11804C5.41175 3.06633 5.45619 3.02398 5.50934 2.99552C5.5625 2.96706 5.62238 2.95355 5.6826 2.95644C5.74283 2.95932 5.80115 2.97848 5.85134 3.01188L12.9173 7.72255C12.963 7.75299 13.0004 7.79423 13.0263 7.84261C13.0522 7.89099 13.0658 7.94501 13.0658 7.99988C13.0658 8.05475 13.0522 8.10878 13.0263 8.15716C13.0004 8.20553 12.963 8.24678 12.9173 8.27722Z"
+                              fill="#555B61" />
+                           </svg>
+                           Lihat Penawaran
+                        </div>
+                     </button> -->
                      </div>
-                  </button> -->
+                  </div>
+                  <!-- Right Column -->
+                  <div class="w-full lg:w-1/2 text-center justify-center flex pr-0">
+                     <img id="hero"
+                     src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-1.png"
+                     alt="" />
                   </div>
                </div>
-               <!-- Right Column -->
-               <div class="w-full lg:w-1/2 text-center justify-center flex pr-0">
-                  <img id="hero"
-                  src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-1.png"
-                  alt="" />
-               </div>
-            </div>
             </div>
          </div>
       </section>
 
-      <section class="h-full w-full border-box bg-white">
+      <section id="promo_section" class="h-full w-full border-box bg-white">
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -211,112 +215,167 @@
 				color: #565656;
 			}
 		</style>
-		<div class="content-2-1" style="font-family: 'Poppins', sans-serif">
-			<div class="container lg:px-32 md:px-8 sm:px-12 px-5 pt-20 pb-12 mx-auto">
-				<!-- Title Text -->
-				<div class="flex flex-col text-center w-full mb-12">
-					<h1 class="text-4xl font-semibold title-font mb-2.5 text-medium-black">
-						3 Keys Benefit
-					</h1>
-					<h2
-						class="text-base font-light title-font mx-12 lg:w-full md:w-full sm:w-3/6 sm:mx-auto text-medium-black">
-						You can easily manage your business with a powerful tools
-					</h2>
-				</div>
+      
+      <div class="pt-12">
+         <!-- Title Text -->
+         <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="text-4xl font-semibold title-font mb-2.5 text-medium-black">
+               3 Keys Benefit
+            </h1>
+            <h2
+               class="text-base font-light title-font mx-12 lg:w-full md:w-full sm:w-3/6 sm:mx-auto text-medium-black">
+               You can easily manage your business with a powerful tools
+            </h2>
+         </div>
 
-				<!-- 3-Column -->
-				<div class="flex lg:flex-row flex-col -m-4">
-					<div class="px-14 md:px-0 lg:px-4 lg:w-1/3 md:w-1/3 sm:w-4/6 mx-auto">
-						<div class="flex rounded-lg h-full lg:pt-8 lg:pb-8 md:pt-8 md:pb-8 pt-4 pb-12 flex-col">
-							<div class="items-center text-center">
-								<div class="inline-flex items-center justify-center rounded-full mb-6">
-									<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-2.png"
-										alt="" />
-								</div>
-							</div>
-							<div class="flex-grow">
-								<h4 class="font-medium text-center text-2xl mb-2.5 text-medium-black">
-									Easy to Operate
-								</h4>
-								<p class="leading-relaxed text-base text-center tracking-wide text-gray">
-									This can easily help you to <br /> grow up your business fast
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="px-14 md:px-0 lg:px-4 lg:w-1/3 md:w-1/3 sm:w-4/6 mx-auto">
-						<div class="flex rounded-lg h-full lg:pt-8 lg:pb-8 md:pt-8 md:pb-8 pt-12 pb-12 flex-col">
-							<div class="items-center text-center">
-								<div class="inline-flex items-center justify-center rounded-full mb-6">
-									<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-3.png"
-										alt="" />
-								</div>
-							</div>
-							<div class="flex-grow">
-								<h4 class="font-medium text-center text-2xl mb-2.5 text-medium-black">
-									Real-Time Analytic
-								</h4>
-								<p class="leading-relaxed text-base text-center tracking-wide text-gray">
-									With real-time analytics, you <br /> can check data in real time
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="px-14 md:px-0 lg:px-4 lg:w-1/3 md:w-1/3 sm:w-4/6 mx-auto">
-						<div class="flex rounded-lg h-full lg:pt-8 lg:pb-8 md:pt-8 md:pb-8 pt-12 pb-6 flex-col">
-							<div class="items-center text-center">
-								<div class="inline-flex items-center justify-center rounded-full mb-6">
-									<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-4.png"
-										alt="" />
-								</div>
-							</div>
-							<div class="flex-grow">
-								<h4 class="font-medium text-center text-2xl mb-2.5 text-medium-black">
-									Very Full Secured
-								</h4>
-								<p class="leading-relaxed text-base text-center tracking-wide text-gray">
-									With real-time analytics, we <br /> will guarantee your data
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+         <div>
+            <div class="flex justify-center flex-wrap md:flex-no=wrap">
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/cheddar.png" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/halloumi.png" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/feta.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+            </div>
+      
+            <div class="flex justify-center flex-wrap md:flex-no=wrap">
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/mozzarella.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/ricotta.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/gouda.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+            </div>
+      
+            <div class="flex justify-center flex-wrap md:flex-no=wrap">
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/brie.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/cream-cheese.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div>
+               
+               <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                  <img class="w-full" src="assets/feta.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                  <p class="text-gray-700 text-base">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  </div>
+               </div> -->
+               
+            </div>
+         </div>
+      </div>
 
-			<div class="lg:px-24 md:px-16 sm:px-8 px-4 pb-20 pt-12 mx-auto">
-				<div class="flex lg:flex-row flex-col -m-4">
-					<div class="p-4 w-full">
-						<div
-							class="card-header h-full flex lg:flex-row flex-col p-7 rounded-xl lg:space-x-3.5 md:space-x-3.5 space-x-0">
-							<div class="text-center mx-auto">
-								<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-1%20(1).png"
-									alt="" />
-							</div>
-							<div
-								class="flex-grow my-auto lg:text-left lg:w-3/4 w-full lg:text-left text-center lg:my-auto md:my-auto py-6">
-								<h4 class="text-2xl font-semibold mb-2.5 text-medium-black">
-									Fast Business Management in 30 minutes
-								</h4>
-								<p class="text-base font-light tracking-wide w-full text-gray">
-									Our tools for business analysis helps an organization understand <br
-										class="lg:block hidden" /> market or business development.
-								</p>
-							</div>
-							<a class="inline-block items-center my-auto text-center">
-								<button
-									class="btn-fill font-bold text-white text-base py-4 lg:w-full md:w-full sm:w-2/3 w-full rounded-xl mb-4 md:mb-5 lg:mb-5 focus:outline-none hover:shadow-lg">
-									Buy Now
-								</button>
-								<button
-									class="btn-outline font-normal font-sans text-black font-sans text-base py-4 lg:w-full md:w-full sm:w-2/3 w-full px-6 rounded-xl focus:outline-none bg-transparent rounded hover:border-transparent">
-									Demo Version
-								</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      
       </section>
 
       <section class="h-full w-full pt-20 pb-12 lg:px-24 md:px-16 sm:px-8 px-4 bg-white transition-all duration-500 linear">

@@ -5,10 +5,18 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Rumah Keju Jogja</title>
       <link rel="icon" href="assets/logo_rumah_keju.png">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="floating-wa.css">
+      <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
       <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer ></script> 
    </head>
    <body>
+      <!-- floating Whatsapp -->
+      <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+         <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
+
       <section id="body" class="h-full w-full border-box transition-all duration-500 linear bg-white">
          <style>
             @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -154,7 +162,9 @@
                      <div class="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">
                         <button
                            class="btn-fill inline-flex font-semibold text-white text-base py-4 px-6 rounded-full mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg">
+                           <a href="#promo_section">
                            Lihat Penawaran
+                           </a>
                         </button>
                      <!-- <button class="btn-outline font-normal text-black text-base py-4 px-6 rounded-xl focus:outline-none bg-transparent rounded hover:border-transparent">
                         <div class="flex items-center">
@@ -216,164 +226,177 @@
 			}
 		</style>
       
-      <div class="pt-12">
-         <!-- Title Text -->
-         <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="text-4xl font-semibold title-font mb-2.5 text-medium-black">
-               3 Keys Benefit
-            </h1>
-            <h2
-               class="text-base font-light title-font mx-12 lg:w-full md:w-full sm:w-3/6 sm:mx-auto text-medium-black">
-               You can easily manage your business with a powerful tools
-            </h2>
-         </div>
+         <div class="pt-12">
+            <!-- Title Text -->
+            <div class="flex flex-col text-center w-full">
+               <h1 class="text-3xl font-semibold title-font mb-2.5 text-medium-black">
+                  Promo 12.12
+               </h1>
+               <!-- <h2
+                  class="text-base font-light title-font mx-12 lg:w-full md:w-full sm:w-3/6 sm:mx-auto text-medium-black">
+                  diskon 12% semua jenis keju 
+               </h2> -->
+            </div>
 
-         <div>
-            <div class="flex justify-center flex-wrap md:flex-no=wrap">
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/cheddar.png" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
+            <div>
+               <div class="flex justify-center flex-wrap md:flex-no=wrap my-4">
+                  <div class="max-w-sm rounded-xl overflow-hidden shadow-lg mx-3 my-4 bg-orange-300">
+                     <img class="w-full" src="assets/cheddar.png" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">Cheddar</div>
+                     <p class="text-gray-700 text-base">
+                        Memiliki rasanya yang kuat, semakin lama cheddar diperam rasa dan aroma akan semakin kuat. Biasanya cheddar asli yang akan menghasilkan rasa dan aroma yang kuat serta slightly bitter/pahit, demikian pula cheddar Kejugja karena mengalami proses cheddaring, maka akan menghasilkan rasa dan aroma yang kuat, yang sudah kami sesuaikan dengan selera Indonesia. 
+                     </p>
+                     <br>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#cake</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#roti</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#kukis</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#salad</span>
+                     </div>
                   </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  
+                  <div class="max-w-sm rounded-xl overflow-hidden shadow-lg mx-3 my-4 bg-orange-300">
+                     <img class="w-full" src="assets/halloumi.png" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">Halloumi</div>
+                     <p class="text-gray-700 text-base">
+                        Merupakan keju tradisional dari Siprus dan spesial di antara keju. Halloumi memiliki titik leleh tinggi dan tekstur yang kokoh dan kenyal. Karakteristik ini membuat Halloumi sempurna untuk aplikasi dengan suhu tinggi seperti digoreng, dipanggang, dan direbus. Halloumi kami terbuat dari susu sapi murni, menghasilkan keju berwarna krem ​​yang menonjolkan rasa susu dan bahan yang bersumber secara lokal dari Indonesia.
+                     </p>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#cemilan</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sandwich</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#rendang</span>
+                     </div>
                   </div>
+                  
+                  <div class="max-w-sm rounded-xl overflow-hidden shadow-lg mx-3 my-4 bg-orange-300">
+                     <img class="w-full" src="assets/feta.jpg" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">Feta</div>
+                     <p class="text-gray-700 text-base">
+                       Merupakan keju Yunani terbuat dari susu domba atau bisa ditambahkan dengan susu kambing, dan merupakan keju Yunani paling popular di dunia. Beberapa nutrisi yang terkandung dalam keju feta adalah kalsium, vitamin B2, vitamin B12, vitamin B6, fosfor, selenium, dan zink. Tak hanya itu, keju ini juga mengandung lemak dan kalori yang lebih sedikit dari keju lainnya.
+                     </p>
+                     <br>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#omelete</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#cake</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pizza</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pasta</span>
+                     </div>
+                  </div>
+
                </div>
-               
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/halloumi.png" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
+         
+               <div class="flex justify-center flex-wrap md:flex-no=wrap">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                     <img class="w-full" src="assets/ricotta.jpg" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">Ricotta</div>
+                     <p class="text-gray-700 text-base">
+                        Berasal dari kata bahasa Latin yaitu "recocta" yang berarti "dimasak lagi". Keju ini memiliki rasa yang tidak terlalu manis dengan tekstur yang lembut.  Ricotta Kejugja dibuat dari whole milk dengan penambahan bakteri baik serta dengan cara artisan dan tradisional_hand dipped. Sehingga menghasilkan rasa yang kaya, lunak berpasir, serta warna kuning pucat.    
+                     </p>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#kukis</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#roti</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#cake</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pizza</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#lasagna</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#omelet</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pie</span>
+                     </div>
                   </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                     <img class="w-full" src="assets/mozzarella.jpg" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">Mozzarella</div>
+                     <p class="text-gray-700 text-base">
+                        Berasal dari Italia dibuat dengan cara diputar dan dipotong, karena dalam Bahasa Italia, moozzare berarti memotong. Keistimewaan mozzarella Kejugja adalah menggunakan kultur bakteri dalam pembuatannya, selain itu proses pembuatannya dilakukan secara artisan dan handmade. Inilah yang membuat kualitasnya premium baik rasa, tekstur maupaun daya simpannya.   
+                     </p>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pizza</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pasta</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#lasagna</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#salad</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pie</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#roti</span>
+                     </div>
                   </div>
+                  
+                  
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                     <img class="w-full" src="assets/gouda.jpg" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                     <p class="text-gray-700 text-base">
+                        Berasal dari Belanda, diberi nama sesuai daerah keju ini awalnya diperdagangkan. Gouda terbuat dari whole milk sehingga mempunyai rasa yang kaya, butterly dan slightlty sweet, lembut dan teksturnya creamy. Gouda Kejugja dijual setelah berumur minimal 4 bulan, termasuk dalam matured gouda. Keju yang meleleh dengan baik dan mudah untuk dipotong tipis – tipis (slice).
+                     </p>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sauce</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#mac&cheese</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#lasagna</span>
+                     </div>
+                  </div>
+                  
                </div>
-               
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/feta.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
+         
+               <div class="flex justify-center flex-wrap md:flex-no=wrap">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                     <img class="w-full" src="assets/brie.jpg" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">Brie</div>
+                     <p class="text-gray-700 text-base">
+                        Kaya rasa, buttery, fruity dan semakin bertambahnya usia akan muncul aroma khas. Mempunyai tekstur yang creamy, lembut dan aroma yang kuat. Brie sering medapatkan julukan “Raja Keju” dan “Keju Raja – raja”, karena dahulu sering digunakan untuk upeti kepada raja Prancis dan beberapa raja Prancis menyukainya.   
+                     </p>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#pastry</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#roti</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#topping</span>
+                     </div>
                   </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                  
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                     <img class="w-full" src="assets/cream-cheese.jpg" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">Cream Cheese</div>
+                     <p class="text-gray-700 text-base">
+                        Cream cheese atau keju krim adalah salah satu jenis keju lunak yang memiliki tekstur mirip seperti mentega. Karenanya, cream cheese sangat lunak dan mudah lumer. Selain itu, rasa cream cheese juga sedikit asam. Awalnya keju ini berasal dari Amerika Serikat.   
+                     </p>
+                     <br><br>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#roti</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#kue</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#cake</span>
+                     </div>
                   </div>
+                  
+                  <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
+                     <img class="w-full" src="assets/feta.jpg" alt="Sunset in the mountains">
+                     <div class="px-6 py-4">
+                     <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                     <p class="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                     </p>
+                     </div>
+                     <div class="px-6 pt-4 pb-2">
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                     </div>
+                  </div> -->
+                  
                </div>
-               
-            </div>
-      
-            <div class="flex justify-center flex-wrap md:flex-no=wrap">
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/mozzarella.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                  </div>
-               </div>
-               
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/ricotta.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                  </div>
-               </div>
-               
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/gouda.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                  </div>
-               </div>
-               
-            </div>
-      
-            <div class="flex justify-center flex-wrap md:flex-no=wrap">
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/brie.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                  </div>
-               </div>
-               
-               <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/cream-cheese.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                  </div>
-               </div>
-               
-               <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg mx-3 my-4">
-                  <img class="w-full" src="assets/feta.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                  </div>
-               </div> -->
-               
             </div>
          </div>
-      </div>
 
       
       </section>
@@ -405,7 +428,7 @@
          <div class="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 gap-y-6">
             <div class="">
                <div class="mb-5">
-                  <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-2.png" alt="">
+                  <img src="assets/logo_rumah_keju.png" width="136" alt="">
                </div>
                <nav class="list-none list-footer space-y-5">
                <li>

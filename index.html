@@ -9,6 +9,8 @@
       <link rel="stylesheet" href="floating-wa.css">
       <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
       <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer ></script> 
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
    </head>
    <body>
       <!-- floating Whatsapp -->
@@ -73,11 +75,12 @@
             transition: 0.3s;
             }
          </style>
+         
          <div class="header-2-1" style="font-family: 'Poppins', sans-serif">
             <!-- Navbar -->
             <header x-data="{ open: false }">
                <div class="mx-auto flex py-12 lg:px-24 md:px-16 sm:px-8 px-8 items-center justify-between lg:justify-start">
-                  <a href="#">
+                  <a href="">
                      <img src="assets/logo_rumah_keju.png" width="160"
                      alt="" />
                   </a>
@@ -92,14 +95,14 @@
                   <nav
                      class="navigation lg:mr-auto hidden lg:flex flex-col text-base justify-center z-50 fixed top-8 left-3 right-3 p-8 rounded-md shadow-md bg-white lg:flex lg:flex-row lg:relative lg:top-0 lg:shadow-none lg:bg-transparent lg:p-0 lg:items-center items-start"
                      :class="{'flex': open, 'hidden': !open}">
-                     <a href="#">
+                     <a href="">
                      <img class="m-0 lg:hidden mb-3"
                         src="assets/logo_rumah_keju.png" width="160"
                         alt="" />
                      </a>
                      <!-- <div class=" lg:hidden"> -->
                      <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active lg:hidden"
-                     href="#">Home</a>
+                     href="">Home</a>
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative lg:hidden" href="#promo_section">Promo</a>
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative lg:hidden" href="#">About Us</a>
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative lg:hidden" href="#">Contact</a>
@@ -107,7 +110,7 @@
                   </nav>
                   <div class="hidden lg:inline-flex">
                      <a class="nav-text text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active"
-                     href="#body">Home</a>
+                     href="">Home</a>
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#promo_section">Promo</a>
                      <!-- <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#">Pricing</a> -->
                      <a class="nav-text text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative" href="#">About Us</a>
@@ -156,8 +159,43 @@
                      PROMO 12.12<br class="lg:block hidden" />
                      Diskon 12%
                      </h1>
-                     <!-- <img src="assets/logo_rumah_keju.png" alt="countdown"> -->
-                     <h1 class="uppercase text-7xl">countdown</h1>
+                      
+                     
+                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max bg-orange-200 text-orange-800 rounded-lg p-2 mx-3 md:mx-0">
+                        <div class="flex flex-col bg-neutral rounded-box text-neutral-content">
+                        <span class="font-mono md:text-5xl text-3xl">
+                           <span id="day">00</span>
+                        </span>
+                              hari
+                           
+                        </div> 
+                        <span class="md:text-5xl text-3xl">:</span>
+                        <div class="flex flex-col bg-neutral rounded-box text-neutral-content">
+                        <span class="font-mono md:text-5xl text-3xl">
+                           <span id="hour">00</span>
+                        </span>
+                              jam
+                           
+                        </div>
+                        <span class="md:text-5xl text-3xl">:</span>
+                        <div class="flex flex-col bg-neutral rounded-box text-neutral-content">
+                        <span class="font-mono md:text-5xl text-3xl">
+                           <span id="minute">00</span>
+                        </span>
+                              menit
+                           
+                        </div> 
+                        <span class="md:text-5xl text-3xl">:</span>
+
+                        <div class="flex flex-col pr-2 bg-neutral rounded-box text-neutral-content">
+                        <span class="font-mono md:text-5xl text-3xl">
+                           <span id="second">00</span>
+                        </span>
+                              detik
+                           
+                        </div>
+                     </div>
+
                      <br>
                      <div class="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">
                         <button
@@ -562,6 +600,7 @@
             </div>
          </div>
       </footer>
-      </section>    
+   </section>    
+   <script src="countdown.js"></script>
    </body>
 </html>

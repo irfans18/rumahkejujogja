@@ -1,7 +1,7 @@
 const countdown = () =>{
-   const countDate = new Date("December 11, 2021 00:00:00").getTime();
-   const now = new Date().getTime();
-   const gap = countDate - now;
+   
+   const gap = initDate();
+   console.log(gap);
 
    const second = 1000;
    const minute = second * 60;
@@ -21,6 +21,18 @@ const countdown = () =>{
 
 }
 
+const initDate = () =>{
+   const startDate = new Date("December 11, 2021 00:00:00").getTime(); //start promo
+   const endDate = new Date("December 14, 2021 00:00:00").getTime();  //end promo
+   const now = new Date().getTime();
+
+   if (now < startDate) {
+      return startDate - now;
+   } else {
+      return endDate - now;
+   }
+}
+
 const format = (value) =>{
    if (value < 10) {
       return "0" + value;
@@ -28,6 +40,7 @@ const format = (value) =>{
       return value;
    }
 }
+
 
 // countdown();
 

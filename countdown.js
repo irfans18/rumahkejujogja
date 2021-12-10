@@ -23,10 +23,10 @@ const countdown = () =>{
 
 }
 
-const promoMessage = (value) => {
+let promoMessage = (value) => {
 
    if(value == false) {
-      document.getElementById("firstLineText").innerHTML = "Mnuju";
+      document.getElementById("firstLineText").innerHTML = "Menuju";
       document.getElementById("secondLineText").innerHTML = "PROMO 12.12";
    } else {
       document.getElementById("firstLineText").innerHTML = "PROMO 12.12";

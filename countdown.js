@@ -26,11 +26,11 @@ const countdown = () =>{
 const promoMessage = (value) => {
 
    if(value == false) {
-      document.getElementById("firstLineText").textContent = "Menuju";
-      document.getElementById("secondLineText").textContent = "PROMO 12.12";
+      document.getElementById("firstLineText").innerHTML = "Mnuju";
+      document.getElementById("secondLineText").innerHTML = "PROMO 12.12";
    } else {
-      document.getElementById("firstLineText").textContent = "PROMO 12.12";
-      document.getElementById("secondLineText").textContent = "Diskon 12%";
+      document.getElementById("firstLineText").innerHTML = "PROMO 12.12";
+      document.getElementById("secondLineText").innerHTML = "Diskon 12%";
    }
 }
 
